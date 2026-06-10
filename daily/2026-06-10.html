@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Louisville Deal Radar</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div id="lock"><div class="lock-card"><h1>Louisville Deal Radar</h1><p>Private static dashboard. Enter passphrase.</p><input id="pw" type="password" placeholder="Passphrase"><button onclick="unlock()">Open</button><p class="tiny">Static GitHub Pages gate, casual privacy only.</p></div></div>
+<main id="app" hidden>
+<header><div><h1>Louisville Deal Radar</h1><p>Flip + BRRR candidates for St. Matthews, Crescent Hill, Butchertown, Germantown, Highlands, Iroquois</p></div><div class="stamp">Updated Jun 10, 2026 11:27 AM</div></header>
+<section class="summary"><div><label>Candidates</label><strong>1</strong></div><div><label>Best score</label><strong>0</strong></div><div><label>Refi LTV</label><strong>75.0%</strong></div><div><label>Flip rule</label><strong>70.0%</strong></div></section>
+<section><h2>Top cards</h2><div class="cards">
+<div class="deal-card">
+  <div class="deal-head"><div><h3>Example Germantown bungalow</h3><p>Germantown</p></div><div class="score big">0</div></div>
+  <div class="grid">
+    <div><label>Price</label><strong>$165,000</strong></div>
+    <div><label>ARV</label><strong>$245,000</strong></div>
+    <div><label>Max offer</label><strong>$126,500</strong></div>
+    <div><label>Flip profit</label><strong>$8,150</strong></div>
+    <div><label>Rent</label><strong>$1,650</strong></div>
+    <div><label>Cash left BRRR</label><strong>$31,200</strong></div>
+  </div>
+  <p>Seed example to validate formulas and UI. Replace with live candidates.</p>
+  <p class="source">Source: Placeholder until first imported listings/resources arrive </p>
+</div>
+</div></section>
+<section><h2>Deal table</h2><div class="table-wrap"><table><thead><tr><th>Property</th><th>Price</th><th>ARV</th><th>Rehab</th><th>Max offer</th><th>Flip profit</th><th>Rent / DSCR</th><th>Cash left</th><th>Score</th></tr></thead><tbody>
+<tr>
+<td><strong>Example Germantown bungalow</strong><br><span>Germantown · Single family · 2/1 · 1050 sqft</span></td>
+<td>$165,000</td><td>$245,000<br><small>low confidence</small></td>
+<td>$45,000</td><td>$126,500</td>
+<td class="warn">$8,150</td>
+<td>$1,650<br><small>DSCR ~ 0.88</small></td>
+<td>$31,200</td>
+<td><span class="score">0</span><br><small>template, starter-home, needs-comps</small></td>
+</tr>
+</tbody></table></div></section>
+<section class="notes"><h2>What I need from Eric</h2><ul><li>Target max purchase price/cash to deploy.</li><li>Financing assumptions: down payment, rate, points, refi LTV, hard-money vs bank.</li><li>Minimum acceptable flip profit and BRRR cash left/DSCR.</li><li>Property types to include/exclude.</li><li>Any MLS/PropStream/wholesaler/Rentometer exports or logins you want me to use.</li></ul></section>
+</main><script>const PASS_HASH='bc0b045836d9ba877d6a9cccb888fedf9bfc1c804c2a80e61340170a815e1dce';</script><script src="app.js"></script></body></html>

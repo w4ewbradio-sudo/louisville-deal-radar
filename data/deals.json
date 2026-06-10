@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-06-10T11:25:00-04:00",
+  "market": "Louisville, KY",
+  "target_areas": ["St. Matthews", "Crescent Hill", "Butchertown", "Germantown", "Highlands", "Iroquois"],
+  "assumptions": {
+    "flip_rule_percent": 0.70,
+    "selling_cost_percent": 0.09,
+    "holding_cost_monthly": 1200,
+    "holding_months": 4,
+    "closing_cost_percent": 0.03,
+    "refi_ltv": 0.75,
+    "maintenance_reserve_percent_rent": 0.08,
+    "vacancy_percent_rent": 0.07,
+    "management_percent_rent": 0.08,
+    "interest_rate_note": "Update with Eric's actual lending terms. Current estimates are placeholders."
+  },
+  "deals": [
+    {
+      "id": "seed-germantown-template",
+      "status": "template",
+      "address": "Example Germantown bungalow",
+      "neighborhood": "Germantown",
+      "source": "Placeholder until first imported listings/resources arrive",
+      "source_url": "",
+      "property_type": "Single family",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 1050,
+      "list_price": 165000,
+      "arv_estimate": 245000,
+      "arv_confidence": "low",
+      "rehab_estimate": 45000,
+      "rent_estimate": 1650,
+      "tax_assessment": null,
+      "days_on_market": null,
+      "notes": "Seed example to validate formulas and UI. Replace with live candidates.",
+      "tags": ["template", "starter-home", "needs-comps"]
+    }
+  ]
+}
