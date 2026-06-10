@@ -2,35 +2,67 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Louisville Deal Radar</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-<div id="lock"><div class="lock-card"><h1>Louisville Deal Radar</h1><p>Private static dashboard. Enter passphrase.</p><input id="pw" type="password" placeholder="Passphrase"><button onclick="unlock()">Open</button><p class="tiny">Static GitHub Pages gate, casual privacy only.</p></div></div>
+<div id="lock"><div class="lock-card"><div class="orb"></div><h1>Louisville Deal Radar</h1><p>Private static dashboard. Enter passphrase.</p><input id="pw" type="password" placeholder="Passphrase"><button onclick="unlock()">Open radar</button><p class="tiny">Static GitHub Pages gate, casual privacy only.</p></div></div>
 <main id="app" hidden>
-<header><div><h1>Louisville Deal Radar</h1><p>Flip + BRRR candidates for St. Matthews, Crescent Hill, Butchertown, Germantown, Highlands, Iroquois</p></div><div class="stamp">Updated Jun 10, 2026 12:24 PM</div></header>
-<section class="summary"><div><label>Candidates</label><strong>1</strong></div><div><label>Best score</label><strong>0</strong></div><div><label>Refi LTV</label><strong>75.0%</strong></div><div><label>Flip rule</label><strong>70.0%</strong></div></section>
-<section><h2>Top cards</h2><div class="cards">
-<div class="deal-card">
-  <div class="deal-head"><div><h3>Example Germantown bungalow</h3><p>Germantown</p></div><div class="score big">0</div></div>
-  <div class="grid">
-    <div><label>Price</label><strong>$165,000</strong></div>
-    <div><label>ARV</label><strong>$245,000</strong></div>
-    <div><label>Max offer</label><strong>$126,500</strong></div>
-    <div><label>Flip profit</label><strong>$8,150</strong></div>
-    <div><label>Rent</label><strong>$1,650</strong></div>
-    <div><label>Cash left BRRR</label><strong>$31,200</strong></div>
+<header class="hero"><div><p class="eyebrow">Flip + BRRR command center</p><h1>Louisville Deal Radar</h1><p>Focused on St. Matthews, Crescent Hill, Butchertown, Germantown, Highlands, Iroquois. Current mode: learn fast, avoid sketchy blocks, preserve capital, build the war chest.</p></div><div class="stamp"><strong>Updated</strong><br>Jun 10, 2026 12:30 PM</div></header>
+<section class="summary">
+  <div><label>Candidates</label><strong>1</strong><small>active feed</small></div>
+  <div><label>Best score</label><strong>25</strong><small>0-100 radar score</small></div>
+  <div><label>Flip target</label><strong>$30,000</strong><small>net after costs</small></div>
+  <div><label>Rental floor</label><strong>$300/mo</strong><small>$500 ideal</small></div>
+  <div><label>HELOC</label><strong>$100,000</strong><small>purchase + rehab</small></div>
+  <div><label>Timeline</label><strong>3-5 mo</strong><small>target rehab/turn</small></div>
+</section>
+<section class="control-panel"><div><h2>Radar filters</h2><p>Use this when the feed gets real listings.</p></div><div class="filters"><button data-filter="all" class="active">All</button><button data-filter="Flip candidate">Flips</button><button data-filter="Rental candidate">Rentals</button><button data-filter="Research deeper">Research</button><button data-filter="Watch only">Watch</button></div></section>
+<section><div class="section-head"><h2>Deal cards</h2><span>0 flip target · 0 rental target · 1 fit HELOC</span></div><div class="cards" id="cards">
+<article class="deal-card" data-neighborhood="Germantown" data-verdict="Watch only" data-score="25">
+  <div class="deal-head">
+    <div><p class="eyebrow">Germantown · Single family</p><h3>Example Germantown bungalow</h3></div>
+    <div class="score big">25</div>
   </div>
+  <div class="verdict watch">Watch only</div>
+  <div class="metric-grid">
+    <div><label>Price</label><strong>$165,000</strong></div>
+    <div><label>ARV</label><strong>$245,000</strong><small>low confidence</small></div>
+    <div><label>Rehab</label><strong>$45,000</strong><small>4 mo est.</small></div>
+    <div><label>Max offer</label><strong>$126,500</strong></div>
+    <div><label>Flip net</label><strong class="bad">$8,150</strong></div>
+    <div><label>Rental profit</label><strong class="bad">$-93/mo</strong></div>
+    <div><label>Cash needed</label><strong class="good">$82,950</strong></div>
+    <div><label>Safety</label><strong>unknown</strong></div>
+  </div>
+  <div class="bars"><span style="width:25%"></span></div>
   <p>Seed example to validate formulas and UI. Replace with live candidates.</p>
   <p class="source">Source: Placeholder until first imported listings/resources arrive </p>
-</div>
+</article>
 </div></section>
-<section><h2>Deal table</h2><div class="table-wrap"><table><thead><tr><th>Property</th><th>Price</th><th>ARV</th><th>Rehab</th><th>Max offer</th><th>Flip profit</th><th>Rent / DSCR</th><th>Cash left</th><th>Score</th></tr></thead><tbody>
-<tr>
-<td><strong>Example Germantown bungalow</strong><br><span>Germantown · Single family · 2/1 · 1050 sqft</span></td>
-<td>$165,000</td><td>$245,000<br><small>low confidence</small></td>
-<td>$45,000</td><td>$126,500</td>
-<td class="warn">$8,150</td>
-<td>$1,650<br><small>DSCR ~ 0.88</small></td>
-<td>$31,200</td>
-<td><span class="score">0</span><br><small>template, starter-home, needs-comps</small></td>
+<section class="split"><div><h2>Neighborhood radar</h2><div class="hoods">
+<div class="hood-card"><h3>St. Matthews</h3><p>stable, competitive, usually safer, harder to find deep discounts</p><div><span class="pill">Risk: low</span></div><small>BRRR only if bought unusually well; light flips can work</small></div>
+
+
+<div class="hood-card"><h3>Crescent Hill</h3><p>older housing stock, strong buyer demand, rehab surprises possible</p><div><span class="pill">Risk: low-med</span></div><small>good flip candidate if ARV comps are tight</small></div>
+
+
+<div class="hood-card"><h3>Butchertown</h3><p>small inventory, appreciation story, quirky properties</p><div><span class="pill">Risk: medium</span></div><small>watch for oddball deals and zoning upside</small></div>
+
+
+<div class="hood-card"><h3>Germantown</h3><p>good first-flip zone, lots of small houses, demand is real</p><div><span class="pill">Risk: medium</span></div><small>strong candidate for cosmetic-to-medium rehab</small></div>
+
+
+<div class="hood-card"><h3>Highlands</h3><p>high demand, older expensive homes, fewer obvious bargains</p><div><span class="pill">Risk: low-med</span></div><small>quality flips, cautious with rehab scope</small></div>
+
+
+<div class="hood-card"><h3>Iroquois</h3><p>more affordability, block-by-block safety matters</p><div><span class="pill">Risk: block-by-block</span></div><small>rental math may work, crime filter is critical</small></div>
+</div></div><aside class="notes"><h2>Feed me deals</h2><ul><li>Email me listing links, MLS/PropStream exports, wholesaler sheets, screenshots, or addresses.</li><li>For every candidate I’ll estimate ARV from comps, rehab, safety, carrying time, flip net, rental profit, and HELOC fit.</li><li>Best paid next step if serious: PropStream/BatchLeads or MLS export access, plus Rentometer for rental comps.</li><li>Public baseline sources: Jefferson PVA, LOJIC parcel/GIS layers, Louisville permits/open data, FEMA flood maps.</li></ul><p class="tiny">Send resources to Marvin by email or Telegram. I’ll normalize them into the dashboard.</p></aside></section>
+<section><h2>Full deal table</h2><div class="table-wrap"><table><thead><tr><th>Property</th><th>Price</th><th>ARV</th><th>Rehab</th><th>Cash needed</th><th>Max offer</th><th>Flip net</th><th>Rental profit</th><th>Safety</th><th>Score</th></tr></thead><tbody>
+<tr data-neighborhood="Germantown">
+<td><strong>Example Germantown bungalow</strong><br><span>Germantown · 2/1 · 1050 sqft</span></td>
+<td>$165,000</td><td>$245,000</td><td>$45,000</td>
+<td>$82,950</td><td>$126,500</td>
+<td class="bad">$8,150</td>
+<td class="bad">$-93/mo</td>
+<td>unknown</td><td><span class="score">25</span></td>
 </tr>
 </tbody></table></div></section>
-<section class="notes"><h2>What I need from Eric</h2><ul><li>Target max purchase price/cash to deploy.</li><li>Financing assumptions: down payment, rate, points, refi LTV, hard-money vs bank.</li><li>Minimum acceptable flip profit and BRRR cash left/DSCR.</li><li>Property types to include/exclude.</li><li>Any MLS/PropStream/wholesaler/Rentometer exports or logins you want me to use.</li></ul></section>
+<section class="notes"><h2>Current buy box</h2><div class="buybox"><p><strong>Capital:</strong> no starting cash assumed. Model uses 20% down and HELOC/hard money constraints.</p><p><strong>Rental:</strong> $300/mo true profit minimum, $500/mo ideal, after mortgage/taxes/insurance/reserves.</p><p><strong>Flip:</strong> $30k net is the learning target. We’ll revise after seeing Louisville inventory.</p><p><strong>Safety:</strong> high-crime blocks are hard-pass, even if the math looks cute. Math can wear a fake mustache.</p></div></section>
 </main><script>const PASS_HASH='bc0b045836d9ba877d6a9cccb888fedf9bfc1c804c2a80e61340170a815e1dce';</script><script src="app.js"></script></body></html>
