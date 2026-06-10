@@ -25,7 +25,7 @@
     "heloc_rate": 0.08,
     "hard_money_rate": 0.15,
     "flip_min_profit_target": 30000,
-    "rental_min_monthly_profit_target": 500,
+    "rental_min_monthly_profit_target": 300,
     "rehab_appetite": "medium to heavy rehab considered, but avoid full gut unless spread/time justifies it; builder partner available",
     "rehab_time_importance": "score should consider estimated rehab duration and carrying cost, not just repair dollars"
   },
@@ -63,7 +63,7 @@
     ],
     "cash_constraint": "20% down; HELOC about $100k available at ~8%; hard money/line available around ~15% for larger needs",
     "flip_learning_question": "Is $30k net profit possible after rehab, selling costs, financing/carry?",
-    "rental_goal": "About $500/month profit after mortgage, taxes, insurance, fees, vacancy/maintenance/management reserves",
+    "rental_goal": "Minimum about $300/month profit after mortgage, taxes, insurance, fees, vacancy/maintenance/management reserves; $500/month is ideal but expectations are flexible.",
     "rehab_partner": "Talented builder partner; rehab time matters"
   }
 }
