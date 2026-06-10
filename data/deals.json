@@ -27,7 +27,13 @@
     "flip_min_profit_target": 30000,
     "rental_min_monthly_profit_target": 300,
     "rehab_appetite": "medium to heavy rehab considered, but avoid full gut unless spread/time justifies it; builder partner available",
-    "rehab_time_importance": "score should consider estimated rehab duration and carrying cost, not just repair dollars"
+    "rehab_time_importance": "score should consider estimated rehab duration and carrying cost, not just repair dollars",
+    "rehab_timeline_target_months_min": 3,
+    "rehab_timeline_target_months_max": 5,
+    "available_starting_cash": 0,
+    "heloc_use": "purchase and rehab; initial working capital is HELOC, not cash",
+    "war_chest_goal": "use early deals to build cash reserves/war chest",
+    "crime_filter": "exclude crazy high crime areas; add crime/neighborhood risk as a gating factor, not just a score penalty"
   },
   "deals": [
     {
@@ -64,6 +70,9 @@
     "cash_constraint": "20% down; HELOC about $100k available at ~8%; hard money/line available around ~15% for larger needs",
     "flip_learning_question": "Is $30k net profit possible after rehab, selling costs, financing/carry?",
     "rental_goal": "Minimum about $300/month profit after mortgage, taxes, insurance, fees, vacancy/maintenance/management reserves; $500/month is ideal but expectations are flexible.",
-    "rehab_partner": "Talented builder partner; rehab time matters"
+    "rehab_partner": "Talented builder partner; rehab time matters",
+    "timeline": "Comfortable with 3 to 5 month rehab/resale or stabilization timeline.",
+    "capital": "No starting cash for deals; approximately $100k HELOC is intended for both purchase and rehab. Goal is to build a war chest from early wins.",
+    "neighborhood_safety": "Avoid crazy high crime areas; neighborhood safety should be a hard screen."
   }
 }
