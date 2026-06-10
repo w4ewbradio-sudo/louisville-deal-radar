@@ -4,9 +4,9 @@
 <body>
 <div id="lock"><div class="lock-card"><div class="orb"></div><h1>Louisville Deal Radar</h1><p>Private static dashboard. Enter passphrase.</p><input id="pw" type="password" placeholder="Passphrase"><button onclick="unlock()">Open radar</button><p class="tiny">Static GitHub Pages gate, casual privacy only.</p></div></div>
 <main id="app" hidden>
-<header class="hero"><div><p class="eyebrow">Flip + BRRR command center</p><h1>Louisville Deal Radar</h1><p>Focused on St. Matthews, Crescent Hill, Butchertown, Germantown, Highlands, Iroquois. Current mode: learn fast, avoid sketchy blocks, preserve capital, build the war chest.</p></div><div class="stamp"><strong>Updated</strong><br>Jun 10, 2026 1:14 PM</div></header>
+<header class="hero"><div><p class="eyebrow">Flip + BRRR command center</p><h1>Louisville Deal Radar</h1><p>Focused on St. Matthews, Crescent Hill, Butchertown, Germantown, Highlands, Iroquois. Current mode: learn fast, avoid sketchy blocks, preserve capital, build the war chest.</p></div><div class="stamp"><strong>Updated</strong><br>Jun 10, 2026 1:33 PM</div></header>
 <section class="summary">
-  <div><label>Candidates</label><strong>1</strong><small>active feed</small></div>
+  <div><label>Candidates</label><strong>6</strong><small>active feed</small></div>
   <div><label>Best score</label><strong>25</strong><small>0-100 radar score</small></div>
   <div><label>Flip target</label><strong>$30,000</strong><small>net after costs</small></div>
   <div><label>Rental floor</label><strong>$300/mo</strong><small>$500 ideal</small></div>
@@ -14,26 +14,136 @@
   <div><label>Timeline</label><strong>3-5 mo</strong><small>target rehab/turn</small></div>
 </section>
 <section class="control-panel"><div><h2>Radar filters</h2><p>Use this when the feed gets real listings.</p></div><div class="filters"><button data-filter="all" class="active">All</button><button data-filter="Flip candidate">Flips</button><button data-filter="Rental candidate">Rentals</button><button data-filter="Research deeper">Research</button><button data-filter="Watch only">Watch</button></div></section>
-<section><div class="section-head"><h2>Deal cards</h2><span>0 flip target · 0 rental target · 1 fit HELOC</span></div><div class="cards" id="cards">
-<article class="deal-card" data-neighborhood="Germantown" data-verdict="Watch only" data-score="25">
+<section><div class="section-head"><h2>Deal cards</h2><span>0 flip target · 0 rental target · 5 fit HELOC</span></div><div class="cards" id="cards">
+<article class="deal-card" data-neighborhood="Germantown / Schnitzelburg edge" data-verdict="Watch only" data-score="25">
   <div class="deal-head">
-    <div><p class="eyebrow">Germantown · Single family</p><h3>Example Germantown bungalow</h3></div>
+    <div><p class="eyebrow">Germantown / Schnitzelburg edge · Single family</p><h3>1108 Schiller Ave, Louisville, KY 40204</h3></div>
     <div class="score big">25</div>
   </div>
   <div class="verdict watch">Watch only</div>
   <div class="metric-grid">
-    <div><label>Price</label><strong>$165,000</strong></div>
-    <div><label>ARV</label><strong>$245,000</strong><small>low confidence</small></div>
-    <div><label>Rehab</label><strong>$45,000</strong><small>4 mo est.</small></div>
-    <div><label>Max offer</label><strong>$126,500</strong></div>
-    <div><label>Flip net</label><strong class="bad">$8,150</strong></div>
-    <div><label>Rental profit</label><strong class="bad">$-93/mo</strong></div>
-    <div><label>Cash needed</label><strong class="good">$82,950</strong></div>
-    <div><label>Safety</label><strong>unknown</strong></div>
+    <div><label>Price</label><strong>$200,000</strong></div>
+    <div><label>ARV</label><strong>$255,000</strong><small>low confidence</small></div>
+    <div><label>Rehab</label><strong>$35,000</strong><small>3 mo est.</small></div>
+    <div><label>Max offer</label><strong>$143,500</strong></div>
+    <div><label>Flip net</label><strong class="bad">$-6,550</strong></div>
+    <div><label>Rental profit</label><strong class="bad">$-271/mo</strong></div>
+    <div><label>Cash needed</label><strong class="good">$81,000</strong></div>
+    <div><label>Safety</label><strong>needs-check</strong></div>
   </div>
   <div class="bars"><span style="width:25%"></span></div>
-  <p>Seed example to validate formulas and UI. Replace with live candidates.</p>
-  <p class="source">Source: Placeholder until first imported listings/resources arrive </p>
+  <p>Active-looking snippet: $200k, 2/1, 1,026 sqft, built 1900. Good target area and small-house size. Needs comp check, photo review, PVA, block safety, and realistic rehab scope before taking seriously. Current numbers are conservative placeholders, not underwriting.</p>
+  <p class="source">Source: Zillow listing surfaced via DuckDuckGo snippet, fetched 2026-06-10 <a href="https://www.zillow.com/homedetails/1108-Schiller-Ave-Louisville-KY-40204/73607716_zpid/">open</a></p>
+</article>
+
+
+<article class="deal-card" data-neighborhood="Germantown / Schnitzelburg" data-verdict="Watch only" data-score="25">
+  <div class="deal-head">
+    <div><p class="eyebrow">Germantown / Schnitzelburg · Single family</p><h3>1438 Christy Ave, Louisville, KY 40204</h3></div>
+    <div class="score big">25</div>
+  </div>
+  <div class="verdict watch">Watch only</div>
+  <div class="metric-grid">
+    <div><label>Price</label><strong>$200,000</strong></div>
+    <div><label>ARV</label><strong>$255,000</strong><small>low confidence</small></div>
+    <div><label>Rehab</label><strong>$40,000</strong><small>3 mo est.</small></div>
+    <div><label>Max offer</label><strong>$138,500</strong></div>
+    <div><label>Flip net</label><strong class="bad">$-11,550</strong></div>
+    <div><label>Rental profit</label><strong class="bad">$-271/mo</strong></div>
+    <div><label>Cash needed</label><strong class="good">$86,000</strong></div>
+    <div><label>Safety</label><strong>needs-check</strong></div>
+  </div>
+  <div class="bars"><span style="width:25%"></span></div>
+  <p>Snippet: $200k, 2/1, 1,044 sqft, built 1900, 97 photos. Photo count may mean enough detail to judge condition. Same caution: needs comp/safety/photo review.</p>
+  <p class="source">Source: Zillow listing surfaced via DuckDuckGo snippet, fetched 2026-06-10 <a href="https://www.zillow.com/homedetails/1438-Christy-Ave-Louisville-KY-40204/73602900_zpid/">open</a></p>
+</article>
+
+
+<article class="deal-card" data-neighborhood="Highlands / Germantown edge" data-verdict="Watch only" data-score="25">
+  <div class="deal-head">
+    <div><p class="eyebrow">Highlands / Germantown edge · Single family</p><h3>1104 Barret Ave, Louisville, KY 40204</h3></div>
+    <div class="score big">25</div>
+  </div>
+  <div class="verdict watch">Watch only</div>
+  <div class="metric-grid">
+    <div><label>Price</label><strong>$257,500</strong></div>
+    <div><label>ARV</label><strong>$310,000</strong><small>low confidence</small></div>
+    <div><label>Rehab</label><strong>$25,000</strong><small>2 mo est.</small></div>
+    <div><label>Max offer</label><strong>$192,000</strong></div>
+    <div><label>Flip net</label><strong class="bad">$-2,800</strong></div>
+    <div><label>Rental profit</label><strong class="bad">$-627/mo</strong></div>
+    <div><label>Cash needed</label><strong class="good">$84,225</strong></div>
+    <div><label>Safety</label><strong>needs-check</strong></div>
+  </div>
+  <div class="bars"><span style="width:25%"></span></div>
+  <p>Snippet: $257.5k, 2/1, 884 sqft, built 1920. More expensive and small, so likely only works if condition is easy or ARV comps are much stronger. Add as a watch/comp anchor more than a likely first deal.</p>
+  <p class="source">Source: Zillow listing surfaced via DuckDuckGo snippet, fetched 2026-06-10 <a href="https://www.zillow.com/homedetails/1104-Barret-Ave-Louisville-KY-40204/73590600_zpid/">open</a></p>
+</article>
+
+
+<article class="deal-card" data-neighborhood="Butchertown / Phoenix Hill edge" data-verdict="Watch only" data-score="25">
+  <div class="deal-head">
+    <div><p class="eyebrow">Butchertown / Phoenix Hill edge · Single family</p><h3>1407 E Washington St, Louisville, KY 40206</h3></div>
+    <div class="score big">25</div>
+  </div>
+  <div class="verdict watch">Watch only</div>
+  <div class="metric-grid">
+    <div><label>Price</label><strong>$250,000</strong></div>
+    <div><label>ARV</label><strong>$320,000</strong><small>low confidence</small></div>
+    <div><label>Rehab</label><strong>$35,000</strong><small>3 mo est.</small></div>
+    <div><label>Max offer</label><strong>$189,000</strong></div>
+    <div><label>Flip net</label><strong class="bad">$2,600</strong></div>
+    <div><label>Rental profit</label><strong class="bad">$-632/mo</strong></div>
+    <div><label>Cash needed</label><strong class="good">$92,500</strong></div>
+    <div><label>Safety</label><strong>needs-check</strong></div>
+  </div>
+  <div class="bars"><span style="width:25%"></span></div>
+  <p>Snippet: $250k, 1/1, 1,200 sqft, built 1880. Odd bed/bath count. Could have layout upside, but also could be a trap. Needs floorplan/photos and comp review before it gets any love.</p>
+  <p class="source">Source: Zillow listing surfaced via DuckDuckGo snippet, fetched 2026-06-10 <a href="https://www.zillow.com/homedetails/1407-E-Washington-St-Louisville-KY-40206/73575129_zpid/">open</a></p>
+</article>
+
+
+<article class="deal-card" data-neighborhood="Iroquois / South Louisville" data-verdict="Watch only" data-score="15">
+  <div class="deal-head">
+    <div><p class="eyebrow">Iroquois / South Louisville · Single family</p><h3>1411 Knight Rd, Louisville, KY 40214</h3></div>
+    <div class="score big">15</div>
+  </div>
+  <div class="verdict watch">Watch only</div>
+  <div class="metric-grid">
+    <div><label>Price</label><strong>$199,900</strong></div>
+    <div><label>ARV</label><strong>$250,000</strong><small>low confidence</small></div>
+    <div><label>Rehab</label><strong>$30,000</strong><small>3 mo est.</small></div>
+    <div><label>Max offer</label><strong>$145,000</strong></div>
+    <div><label>Flip net</label><strong class="bad">$-6,000</strong></div>
+    <div><label>Rental profit</label><strong class="bad">$-149/mo</strong></div>
+    <div><label>Cash needed</label><strong class="good">$75,977</strong></div>
+    <div><label>Safety</label><strong>caution</strong></div>
+  </div>
+  <div class="bars"><span style="width:15%"></span></div>
+  <p>Snippet says pending at $199.9k, 4/2, 1,500 sqft. Probably not actionable if already pending, but useful as an Iroquois/South Louisville benchmark. Safety/block quality must be checked hard.</p>
+  <p class="source">Source: Zillow listing surfaced via DuckDuckGo snippet, fetched 2026-06-10 <a href="https://www.zillow.com/homedetails/1411-Knight-Rd-Louisville-KY-40214/73441694_zpid/">open</a></p>
+</article>
+
+
+<article class="deal-card" data-neighborhood="Crescent Hill / Clifton" data-verdict="Watch only" data-score="15">
+  <div class="deal-head">
+    <div><p class="eyebrow">Crescent Hill / Clifton · Single family</p><h3>113 Pope St, Louisville, KY 40206</h3></div>
+    <div class="score big">15</div>
+  </div>
+  <div class="verdict watch">Watch only</div>
+  <div class="metric-grid">
+    <div><label>Price</label><strong>$285,000</strong></div>
+    <div><label>ARV</label><strong>$360,000</strong><small>low confidence</small></div>
+    <div><label>Rehab</label><strong>$35,000</strong><small>3 mo est.</small></div>
+    <div><label>Max offer</label><strong>$217,000</strong></div>
+    <div><label>Flip net</label><strong class="bad">$4,000</strong></div>
+    <div><label>Rental profit</label><strong class="bad">$-571/mo</strong></div>
+    <div><label>Cash needed</label><strong class="bad">$100,550</strong></div>
+    <div><label>Safety</label><strong>needs-check</strong></div>
+  </div>
+  <div class="bars"><span style="width:15%"></span></div>
+  <p>Snippet: $285k, 3/1, 1,401 sqft, built 1900. Higher purchase price, but better size/area. Likely a watch/research candidate unless comps show meaningful upside.</p>
+  <p class="source">Source: Zillow listing surfaced via DuckDuckGo snippet, fetched 2026-06-10 <a href="https://www.zillow.com/homedetails/113-Pope-St-Louisville-KY-40206/73575908_zpid/">open</a></p>
 </article>
 </div></section>
 <section class="split"><div><h2>Neighborhood radar</h2><div class="hoods">
@@ -55,13 +165,63 @@
 <div class="hood-card"><h3>Iroquois</h3><p>more affordability, block-by-block safety matters</p><div><span class="pill">Risk: block-by-block</span></div><small>rental math may work, crime filter is critical</small></div>
 </div></div><aside class="notes"><h2>Feed me deals</h2><ul><li>Email me listing links, MLS/PropStream exports, wholesaler sheets, screenshots, or addresses.</li><li>For every candidate I’ll estimate ARV from comps, rehab, safety, carrying time, flip net, rental profit, and HELOC fit.</li><li>Best paid next step if serious: PropStream/BatchLeads or MLS export access, plus Rentometer for rental comps.</li><li>Public baseline sources: Jefferson PVA, LOJIC parcel/GIS layers, Louisville permits/open data, FEMA flood maps.</li></ul><p class="tiny">Send resources to Marvin by email or Telegram. I’ll normalize them into the dashboard.</p></aside></section>
 <section><h2>Full deal table</h2><div class="table-wrap"><table><thead><tr><th>Property</th><th>Price</th><th>ARV</th><th>Rehab</th><th>Cash needed</th><th>Max offer</th><th>Flip net</th><th>Rental profit</th><th>Safety</th><th>Score</th></tr></thead><tbody>
-<tr data-neighborhood="Germantown">
-<td><strong>Example Germantown bungalow</strong><br><span>Germantown · 2/1 · 1050 sqft</span></td>
-<td>$165,000</td><td>$245,000</td><td>$45,000</td>
-<td>$82,950</td><td>$126,500</td>
-<td class="bad">$8,150</td>
-<td class="bad">$-93/mo</td>
-<td>unknown</td><td><span class="score">25</span></td>
+<tr data-neighborhood="Germantown / Schnitzelburg edge">
+<td><strong>1108 Schiller Ave, Louisville, KY 40204</strong><br><span>Germantown / Schnitzelburg edge · 2/1 · 1026 sqft</span></td>
+<td>$200,000</td><td>$255,000</td><td>$35,000</td>
+<td>$81,000</td><td>$143,500</td>
+<td class="bad">$-6,550</td>
+<td class="bad">$-271/mo</td>
+<td>needs-check</td><td><span class="score">25</span></td>
+</tr>
+
+
+<tr data-neighborhood="Germantown / Schnitzelburg">
+<td><strong>1438 Christy Ave, Louisville, KY 40204</strong><br><span>Germantown / Schnitzelburg · 2/1 · 1044 sqft</span></td>
+<td>$200,000</td><td>$255,000</td><td>$40,000</td>
+<td>$86,000</td><td>$138,500</td>
+<td class="bad">$-11,550</td>
+<td class="bad">$-271/mo</td>
+<td>needs-check</td><td><span class="score">25</span></td>
+</tr>
+
+
+<tr data-neighborhood="Highlands / Germantown edge">
+<td><strong>1104 Barret Ave, Louisville, KY 40204</strong><br><span>Highlands / Germantown edge · 2/1 · 884 sqft</span></td>
+<td>$257,500</td><td>$310,000</td><td>$25,000</td>
+<td>$84,225</td><td>$192,000</td>
+<td class="bad">$-2,800</td>
+<td class="bad">$-627/mo</td>
+<td>needs-check</td><td><span class="score">25</span></td>
+</tr>
+
+
+<tr data-neighborhood="Butchertown / Phoenix Hill edge">
+<td><strong>1407 E Washington St, Louisville, KY 40206</strong><br><span>Butchertown / Phoenix Hill edge · 1/1 · 1200 sqft</span></td>
+<td>$250,000</td><td>$320,000</td><td>$35,000</td>
+<td>$92,500</td><td>$189,000</td>
+<td class="bad">$2,600</td>
+<td class="bad">$-632/mo</td>
+<td>needs-check</td><td><span class="score">25</span></td>
+</tr>
+
+
+<tr data-neighborhood="Iroquois / South Louisville">
+<td><strong>1411 Knight Rd, Louisville, KY 40214</strong><br><span>Iroquois / South Louisville · 4/2 · 1500 sqft</span></td>
+<td>$199,900</td><td>$250,000</td><td>$30,000</td>
+<td>$75,977</td><td>$145,000</td>
+<td class="bad">$-6,000</td>
+<td class="bad">$-149/mo</td>
+<td>caution</td><td><span class="score">15</span></td>
+</tr>
+
+
+<tr data-neighborhood="Crescent Hill / Clifton">
+<td><strong>113 Pope St, Louisville, KY 40206</strong><br><span>Crescent Hill / Clifton · 3/1 · 1401 sqft</span></td>
+<td>$285,000</td><td>$360,000</td><td>$35,000</td>
+<td>$100,550</td><td>$217,000</td>
+<td class="bad">$4,000</td>
+<td class="bad">$-571/mo</td>
+<td>needs-check</td><td><span class="score">15</span></td>
 </tr>
 </tbody></table></div></section>
 <section class="notes"><h2>Current buy box</h2><div class="buybox"><p><strong>Capital:</strong> no starting cash assumed. Model uses 20% down and HELOC/hard money constraints.</p><p><strong>Rental:</strong> $300/mo true profit minimum, $500/mo ideal, after mortgage/taxes/insurance/reserves.</p><p><strong>Flip:</strong> $30k net is the learning target. We’ll revise after seeing Louisville inventory.</p><p><strong>Safety:</strong> high-crime blocks are hard-pass, even if the math looks cute. Math can wear a fake mustache.</p></div></section>
