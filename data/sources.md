@@ -1,6 +1,7 @@
 # Louisville Deal Radar Data Sources
 
 ## High value sources to wire in
+- The Deal Depot: Louisville-area wholesale/assignable-contract deals and walkthrough notices. https://dealdepot.biz/ (added per Eric 2026-06-10)
 - Jefferson County PVA: parcel lookup, assessments, property details. Sales/owner search may require paid subscription. https://jeffersonpva.ky.gov/
 - LOJIC: parcels, zoning, taxing districts, overlays, map/GIS services. https://www.lojic.org/
 - Louisville Metro Open Data: permits, code enforcement, vacant/abandoned property datasets if available through the city portal.
